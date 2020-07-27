@@ -30,7 +30,7 @@
                 <tr>
                 <th scope="row">Usia Anak</th>
                 <td>:</td>
-                <td><?= $imun['Usia_timbangan']; ?></td>
+                <td><?= $imun['Usia']; ?></td>
                 </tr>
 
                 <tr>

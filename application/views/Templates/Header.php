@@ -47,7 +47,11 @@
         <a class="nav-link" href="<?= base_url(); ?>Manfaat">Manfaat</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Logout</a>
+        <?php if (isset($_SESSION['username'])): ?>
+            <a class="nav-link" href="<?= base_url('/Login/logout') ?>">Logout</a>
+            <?php else :  ?>
+            <a class="nav-link" href="<?= base_url('/Login') ?>">Login</a>
+            <?php endif; ?>
         </li>
     </ul>
     </div>

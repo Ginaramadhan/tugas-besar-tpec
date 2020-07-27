@@ -54,7 +54,7 @@
                 <tr>
                 <th scope="row">Usia Penimbangan</th>
                 <td>:</td>
-                <td><?= $timbangan['Usia_timbangan']; ?></td>
+                <td><?= $timbangan['Usia']; ?></td>
                 </tr>
 
             </tbody>

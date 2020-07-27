@@ -54,7 +54,7 @@ class Imunisasi extends CI_Controller{
        $data = [
            'Id_anak'=> $Id_anak,
            'Tanggal_penimbangan'=> $Tanggal_penimbangan,
-           'Usia_timbangan'     => $Usia_timbangan,
+           'Usia'     => $Usia_timbangan,
            'Kode_imunisasi'     => (int)$Kode_imunisasi
        ];
 

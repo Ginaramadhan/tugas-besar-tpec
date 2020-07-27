@@ -40,7 +40,7 @@ class Timbangan extends CI_Controller{
             'Tanggal_penimbangan'=> $Tanggal_penimbangan,
             'Berat_timbangan'=> $Berat_timbangan,
             'Tinggi_timbangan'=> $Tinggi_timbangan,
-            'Usia_timbangan'=> $Usia_timbangan,
+            'Usia'=> $Usia_timbangan,
             'Kode_imunisasi'=> $Kode_imunisasi,
             'Kode_vitamin'=> $Kode_vitamin
         ];
@@ -95,7 +95,7 @@ class Timbangan extends CI_Controller{
             'Tanggal_penimbangan'=> $Tanggal_penimbangan,
             'Berat_timbangan'    => $Berat_timbangan,
             'Tinggi_timbangan'   => $Tinggi_timbangan,
-            'Usia_timbangan'     => $Usia_timbangan,
+            'Usia'     => $Usia_timbangan,
             'Kode_imunisasi'     => (int)$Kode_imunisasi,
             'Kode_vitamin'       => (int)$Kode_vitamin
         ];

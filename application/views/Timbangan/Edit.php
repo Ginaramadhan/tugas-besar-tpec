@@ -27,7 +27,7 @@
         </div>
         <div class="form-group">
         <label for="Usia_timbangan">Usia</label>
-        <input type="text" name="Usia_timbangan" class="form-control" id="Usia_timbangan" value="<?= $timbangan['Usia_timbangan']?>">
+        <input type="text" name="Usia_timbangan" class="form-control" id="Usia_timbangan" value="<?= $timbangan['Usia']?>">
         </div>
         <div class="form-group">
         <label for="Kode_imunisasi">Jenis Imunisasi</label>

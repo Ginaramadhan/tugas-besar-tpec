@@ -35,7 +35,7 @@
       <td><?= $timbangan['Tanggal_penimbangan']; ?></td>
       <td><?= $timbangan['Berat_timbangan']; ?></td>
       <td><?= $timbangan['Tinggi_timbangan']; ?></td>
-      <td><?= $timbangan['Usia_timbangan']; ?></td>
+      <td><?= $timbangan['Usia']; ?></td>
       <td>
       <a class="btn btn-info" href="<?= base_url(); ?>Timbangan/detail/<?= $timbangan['Kode_timbangan']; ?>" role="button">Info</a>
        <a class="btn btn-warning" href="<?= base_url(); ?>Timbangan/edit/<?= $timbangan['Kode_timbangan']; ?>" role="button" onclick="return confirm('Apakah yakin data ingin diubah?');">Edit</a>

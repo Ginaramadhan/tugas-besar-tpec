@@ -5,32 +5,25 @@
     <!--- JUMBOTRON -->
     <div class=" jumbotron-fluid">
     <div class="container" style="background-color: #ffffff;"><br>
-    <h1 class="display-4">Selamat Datang, Admin!</h1>
     <hr class="my-4"><P>
     </div>
     </div>
         <div class="row">
-    <?php foreach($home as $h): ?>
         <!----- 1 ----->
         <div class="col-md-4">
         <div class="card" style="width: 20rem;">
         <div class="card-body">
-        <h5 class="card-title text-center"><?= $h->Judul_artikel ?> </H5><hr>
+        <h5 class="card-title text-center"><?= $artikel->Judul_artikel ?> </H5><hr>
         <p class="card-text">
-        <?= $h->Isi_artikel; ?><br><br>
-
-        <?php if ($h->Judul_artikel == 'Penimbangan dan Imunisasi') : ?>
-        <a class="btn btn-primary float-right" href="<?= base_url('Balita');?>">Data Balita</a>
-        <?php endif; ?>
-      
+        <!-- <a class="btn btn-primary float-right" href="<?= base_url('Home/baca/'.$h->Kode_artikel);?>">Baca Selengkapnya</a> -->
+        <?= $artikel->Isi_artikel; ?><br><br>
         <?php if (isset($_SESSION['username'])): ?>
-        <a class="btn btn-danger float-right" href="<?= base_url('Home/edit/'.$h->Kode_artikel);?>">EDIT</a>
+        <a class="btn btn-danger float-right" href="<?= base_url('Home/edit/'.$artikel->Kode_artikel);?>">EDIT</a>
         <?php endif; ?>
         </p>
         </div>
         </div>
         </div>
-    <?php endforeach; ?>
         </div>
         <br>
 

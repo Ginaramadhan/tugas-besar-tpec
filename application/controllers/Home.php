@@ -38,4 +38,13 @@ class Home extends CI_Controller{
         redirect('Home');
     }
 
+    public function baca() {
+        $data['artikel'] = $this->Home_model->getArtikelById($this->uri->segment(3))[0];
+        $data['judul'] = $data['artikel']->Judul_artikel;
+
+        $this->load->view('Templates/Header', $data);
+        $this->load->view('Home/Baca', $data);
+        $this->load->view('Templates/Footer');
+    }
+
 }
